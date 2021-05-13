@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './Global.css';
 import Badge from '../src/components/Badge'
+import 'bootstrap/dist/css/bootstrap.css'
 // const element =<h1>Rafa</h1>; = const element = React.createElement('h1',{},'Rafa children') el segundo parametro son los props, o properties
 // const element = React.createElement('a',{href: 'google.com'},'Rafa')
 
 
 const container = document.getElementById('app')
 
-ReactDOM.render(<Badge/> , container)
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+<Badge firstName = "Rafael" 
+      lastName = "Cabrera"
+      jobTitle="Frontend Developer"
+      avatar = "https://s.gravatar.com/avatar/89217f4ba70f71a8eb88ef4c20d85aa8?s=80"
+      twitter= "RafaC3D"/> , container)
